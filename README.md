@@ -46,10 +46,10 @@ Funcionalidades que enriquecem a experiência, mas que ficam para depois do MVP 
 
 ## Fluxo de telas
 
-![Autenticação e Onboarding](fluxo-tela1.png)
-![Rotina Diária](image.png)
-![Treino e IA Generativa](image-1.png)
-![Progresso, loja e social](image-2.png)
+![Autenticação e Onboarding](imagens-readme/fluxo-tela1.png)
+![Rotina Diária](imagens-readme/image.png)
+![Treino e IA Generativa](imagens-readme/image-1.png)
+![Progresso, loja e social](imagens-readme/image-2.png)
 
 
 ## Cronograma
