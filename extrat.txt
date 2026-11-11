@@ -1,0 +1,38 @@
+### Sprint 1 (10/11 - 13/11)
+
+Objetivo: ter a base da aplicação de pé e o ciclo principal navegável — autenticação funcionando, hábitos cadastráveis e o treino sendo gerado pela IA.
+
+**Entregas previstas:**
+
+1. Documentação inicial no README (proposta, público-alvo, MVP e cronograma) e fluxo de telas de baixa fidelidade no repositório.
+2. Ambientes configurados: backend com Django REST Framework, CORS e variáveis de ambiente; frontend com React, Tailwind e estrutura de rotas.
+3. Modelagem completa do banco de dados e migrações executando.
+4. Cadastro e login funcionando ponta a ponta, com JWT e rotas privadas protegidas no frontend.
+5. CRUD de hábitos disponível na API e na interface, com seleção de dias da semana.
+6. Integração com a API do Google Gemini: contrato definido, treino sendo gerado, validado e salvo.
+7. Endpoint e tela de missões do dia exibindo hábitos, treino e refeições da data atual.
+
+### Sprint 2 (16/11 - 19/11)
+
+Objetivo: fechar a gamificação, as funcionalidades opcionais, a qualidade e o deploy público.
+
+**Entregas previstas:**
+
+1. Conclusão de missões com concessão idempotente de XP, nível derivado do XP total e cálculo de streak.
+2. Metas nutricionais e refeições implementadas no backend e na interface.
+3. Visualização do treino por divisão, com conclusão individual de exercícios.
+4. Perfil e painel de progresso com XP, nível, gemas e streak.
+5. Funcionalidades sociais: grupos com leaderboard e ranking global.
+6. Gemas, loja de recompensas e proteção de streak.
+7. Revisão de permissões, validações e segurança da API; revisão de responsividade, acessibilidade e acabamento das telas.
+8. Testes automatizados do backend e dos fluxos principais do frontend.
+9. Deploy público do backend (com banco de produção) e do frontend, com o fluxo principal validado no ambiente publicado.
+
+### Entrega (20/11 - 24/11)
+
+Objetivo: finalizar documentação, validar com usuários e ensaiar a apresentação.
+
+1. Documentação técnica da API e instruções de execução.
+2. README finalizado com links dos deploys, funcionalidades implementadas, variáveis de ambiente e limitações.
+3. Registro do exemplo concreto de uso de IA durante o desenvolvimento, exigido na apresentação.
+4. Testes com usuários, implementação de ao menos uma melhoria e ensaio da apresentação.
