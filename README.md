@@ -59,7 +59,7 @@ Legenda de responsáveis: **A** = [Integrante A], **B** = [Integrante B], **C** 
 ### Sprint 1 (10/11 - 13/11)
 
 - [ ] FE-01 — Documentar proposta, público-alvo e cronograma (C)
-- [ ] FE-02 — Criar fluxo de telas de baixa fidelidade (A, C)
+- [X] FE-02 — Criar fluxo de telas de baixa fidelidade (A, C)
 - [ ] FE-03 — Configurar React, Tailwind e estrutura de rotas (A)
 - [ ] FE-04 — Criar layout base e identidade visual (C)
 - [ ] FE-05 — Implementar telas de cadastro, login e logout (A)
