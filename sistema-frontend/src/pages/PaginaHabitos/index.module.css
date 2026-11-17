@@ -1,0 +1,11 @@
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.diaInativo {
+  background: var(--color-surface-raised);
+  color: var(--color-text-subtle);
+}
