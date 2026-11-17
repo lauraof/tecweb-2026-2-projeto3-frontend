@@ -1,0 +1,203 @@
+
+.pagina-treino {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.treino-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.treino-cabecalho h1 {
+  margin: 4px 0 0;
+  font-size: 1.8rem;
+}
+
+.treino-voltar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  font-size: 1.5rem;
+}
+
+.treino-etiqueta {
+  color: var(--color-cyan);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.treino-resumo {
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.treino-resumo h2 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+}
+
+.treino-resumo p {
+  font-size: 0.9rem;
+}
+
+.treino-progresso-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0 10px;
+  font-size: 0.85rem;
+}
+
+.treino-progresso {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--color-bg-deep);
+}
+
+.treino-progresso-barra {
+  height: 100%;
+  border-radius: 6px;
+  background: var(--gradient-accent);
+  transition: width 0.25s ease;
+}
+
+.treino-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.treino-lista h2 {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.treino-exercicio {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.treino-exercicio:hover {
+  border-color: var(--color-primary);
+}
+
+.treino-exercicio.concluido {
+  border-color: var(--color-success);
+  background: #203329;
+}
+
+.treino-exercicio input {
+  width: 20px;
+  height: 20px;
+  min-height: auto;
+  flex-shrink: 0;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.treino-exercicio-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.treino-exercicio-info strong {
+  font-size: 0.92rem;
+}
+
+.treino-exercicio-info span {
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+}
+
+.treino-exercicio.concluido
+.treino-exercicio-info strong {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.treino-recompensa {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--color-cyan);
+  font-size: 0.68rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.treino-aviso {
+  padding: 16px;
+  border: 1px solid var(--color-orange);
+  border-radius: 8px;
+  background: rgba(255, 148, 77, 0.08);
+}
+
+.treino-aviso strong {
+  color: var(--color-orange);
+}
+
+.treino-aviso p {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+}
+
+.treino-finalizado {
+  padding: 18px;
+  border: 1px solid var(--color-success);
+  border-radius: 8px;
+  background: rgba(114, 214, 161, 0.1);
+}
+
+.treino-finalizado strong {
+  color: var(--color-success);
+}
+
+.treino-finalizado p {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+}
+
+.treino-gerar {
+  width: 100%;
+  margin-top: auto;
+}
+
+.treino-modo-demo {
+  margin: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-subtle);
+}
+
+@media (max-width: 390px) {
+  .treino-exercicio {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .treino-recompensa {
+    font-size: 0.6rem;
+  }
+}
