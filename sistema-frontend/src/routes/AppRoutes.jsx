@@ -1,53 +1,53 @@
 import { Route, Routes } from 'react-router'
 
 import ProtectedRoute from './ProtectedRoute.jsx'
-import OpeningPage from '../pages/OpeningPage/OpeningPage.jsx'
-import RegisterPage from '../pages/RegisterPage/RegisterPage.jsx'
-import LoginPage from '../pages/LoginPage/LoginPage.jsx'
-import OnboardingPage from '../pages/OnboardingPage/OnboardingPage.jsx'
-import HomePage from '../pages/HomePage/HomePage.jsx'
-import HabitsPage from '../pages/HabitsPage/HabitsPage.jsx'
-import HabitFormPage from '../pages/HabitFormPage/HabitFormPage.jsx'
-import DietPage from '../pages/DietPage/DietPage.jsx'
-import GoalsPage from '../pages/GoalsPage/GoalsPage.jsx'
-import WorkoutPage from '../pages/WorkoutPage/WorkoutPage.jsx'
-import GenerateWorkoutPage from '../pages/GenerateWorkoutPage/GenerateWorkoutPage.jsx'
-import ReviewWorkoutPage from '../pages/ReviewWorkoutPage/ReviewWorkoutPage.jsx'
-import ProfilePage from '../pages/ProfilePage/ProfilePage.jsx'
-import StorePage from '../pages/StorePage/StorePage.jsx'
-import GroupsPage from '../pages/GroupsPage/GroupsPage.jsx'
-import GroupFormPage from '../pages/GroupFormPage/GroupFormPage.jsx'
-import GroupDetailsPage from '../pages/GroupDetailsPage/GroupDetailsPage.jsx'
-import GlobalRankingPage from '../pages/GlobalRankingPage/GlobalRankingPage.jsx'
-import NotFoundPage from '../pages/NotFoundPage/NotFoundPage.jsx'
+import PaginaAbertura from '../pages/PaginaAbertura/index.jsx'
+import PaginaCadastro from '../pages/PaginaCadastro/index.jsx'
+import PaginaEntrar from '../pages/PaginaEntrar/index.jsx'
+import PaginaIntroducao from '../pages/PaginaIntroducao/index.jsx'
+import PaginaInicial from '../pages/PaginaInicial/index.jsx'
+import PaginaHabitos from '../pages/PaginaHabitos/index.jsx'
+import PaginaFormularioHabito from '../pages/PaginaFormularioHabito/index.jsx'
+import PaginaDieta from '../pages/PaginaDieta/index.jsx'
+import PaginaMetas from '../pages/PaginaMetas/index.jsx'
+import PaginaTreino from '../pages/PaginaTreino/index.jsx'
+import PaginaGerarTreino from '../pages/PaginaGerarTreino/index.jsx'
+import PaginaRevisarTreino from '../pages/PaginaRevisarTreino/index.jsx'
+import PaginaPerfil from '../pages/PaginaPerfil/index.jsx'
+import PaginaLoja from '../pages/PaginaLoja/index.jsx'
+import PaginaGrupos from '../pages/PaginaGrupos/index.jsx'
+import PaginaFormularioGrupo from '../pages/PaginaFormularioGrupo/index.jsx'
+import PaginaDetalhesGrupo from '../pages/PaginaDetalhesGrupo/index.jsx'
+import PaginaRankingGlobal from '../pages/PaginaRankingGlobal/index.jsx'
+import PaginaNaoEncontrada from '../pages/PaginaNaoEncontrada/index.jsx'
 
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<OpeningPage />} />
-      <Route path="/cadastro" element={<RegisterPage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route path="/" element={<PaginaAbertura />} />
+      <Route path="/cadastro" element={<PaginaCadastro />} />
+      <Route path="/login" element={<PaginaEntrar />} />
 
       <Route element={<ProtectedRoute />}>
-        <Route path="/onboarding" element={<OnboardingPage />} />
-        <Route path="/inicio" element={<HomePage />} />
-        <Route path="/habitos" element={<HabitsPage />} />
-        <Route path="/habitos/novo" element={<HabitFormPage />} />
-        <Route path="/habitos/:habitId/editar" element={<HabitFormPage />} />
-        <Route path="/dieta" element={<DietPage />} />
-        <Route path="/perfil/metas" element={<GoalsPage />} />
-        <Route path="/treino" element={<WorkoutPage />} />
-        <Route path="/treino/gerar" element={<GenerateWorkoutPage />} />
-        <Route path="/treino/revisar" element={<ReviewWorkoutPage />} />
-        <Route path="/perfil" element={<ProfilePage />} />
-        <Route path="/loja" element={<StorePage />} />
-        <Route path="/grupos" element={<GroupsPage />} />
-        <Route path="/grupos/novo" element={<GroupFormPage />} />
-        <Route path="/grupos/:groupId" element={<GroupDetailsPage />} />
-        <Route path="/ranking" element={<GlobalRankingPage />} />
+        <Route path="/onboarding" element={<PaginaIntroducao />} />
+        <Route path="/inicio" element={<PaginaInicial />} />
+        <Route path="/habitos" element={<PaginaHabitos />} />
+        <Route path="/habitos/novo" element={<PaginaFormularioHabito />} />
+        <Route path="/habitos/:habitoId/editar" element={<PaginaFormularioHabito />} />
+        <Route path="/dieta" element={<PaginaDieta />} />
+        <Route path="/perfil/metas" element={<PaginaMetas />} />
+        <Route path="/treino" element={<PaginaTreino />} />
+        <Route path="/treino/gerar" element={<PaginaGerarTreino />} />
+        <Route path="/treino/revisar" element={<PaginaRevisarTreino />} />
+        <Route path="/perfil" element={<PaginaPerfil />} />
+        <Route path="/loja" element={<PaginaLoja />} />
+        <Route path="/grupos" element={<PaginaGrupos />} />
+        <Route path="/grupos/novo" element={<PaginaFormularioGrupo />} />
+        <Route path="/grupos/:grupoId" element={<PaginaDetalhesGrupo />} />
+        <Route path="/ranking" element={<PaginaRankingGlobal />} />
       </Route>
 
-      <Route path="*" element={<NotFoundPage />} />
+      <Route path="*" element={<PaginaNaoEncontrada />} />
     </Routes>
   )
 }

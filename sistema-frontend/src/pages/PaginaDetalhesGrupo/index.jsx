@@ -1,5 +1,5 @@
-function GroupDetailsPage() {
+function PaginaDetalhesGrupo() {
   return <h1>Grupo / Leaderboard</h1>
 }
 
-export default GroupDetailsPage
+export default PaginaDetalhesGrupo

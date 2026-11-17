@@ -1,5 +1,5 @@
-function GlobalRankingPage() {
+function PaginaRankingGlobal() {
   return <h1>Ranking global</h1>
 }
 
-export default GlobalRankingPage
+export default PaginaRankingGlobal

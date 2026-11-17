@@ -1,5 +1,5 @@
-function DietPage() {
+function PaginaDieta() {
   return <h1>Refeições de hoje</h1>
 }
 
-export default DietPage
+export default PaginaDieta

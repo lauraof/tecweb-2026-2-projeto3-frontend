@@ -1,5 +1,5 @@
-function GenerateWorkoutPage() {
+function PaginaGerarTreino() {
   return <h1>Montar meu treino</h1>
 }
 
-export default GenerateWorkoutPage
+export default PaginaGerarTreino

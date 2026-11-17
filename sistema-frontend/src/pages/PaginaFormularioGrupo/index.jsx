@@ -1,5 +1,5 @@
-function GroupFormPage() {
+function PaginaFormularioGrupo() {
   return <h1>Novo grupo</h1>
 }
 
-export default GroupFormPage
+export default PaginaFormularioGrupo

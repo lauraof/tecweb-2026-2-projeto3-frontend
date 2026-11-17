@@ -1,5 +1,5 @@
-function ReviewWorkoutPage() {
+function PaginaRevisarTreino() {
   return <h1>Seu novo treino</h1>
 }
 
-export default ReviewWorkoutPage
+export default PaginaRevisarTreino

@@ -1,5 +1,5 @@
-function RegisterPage() {
+function PaginaCadastro() {
   return <h1>Criar conta</h1>
 }
 
-export default RegisterPage
+export default PaginaCadastro
