@@ -1,17 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router';
 import { listarHabitos } from "../../services/habitos";
-import estilos from './index.module.css';
-
-const DIAS_DA_SEMANA = [
-  { codigo: 'SEG', letra: 'S' },
-  { codigo: 'TER', letra: 'T' },
-  { codigo: 'QUA', letra: 'Q' },
-  { codigo: 'QUI', letra: 'Q' },
-  { codigo: 'SEX', letra: 'S' },
-  { codigo: 'SAB', letra: 'S' },
-  { codigo: 'DOM', letra: 'D' },
-]
+import { DIAS_DA_SEMANA} from "../../constants/dias";
 
 function PaginaHabitos() {
   const [habitos, setHabitos] = useState([]);
@@ -77,14 +67,18 @@ function PaginaHabitos() {
             <p className="helper-text">{habito.descricao}</p>
           )}
 
-          <div className={estilos.dias}>
+          <div className="flex flex-wrap gap-2 mt-3.5">
             {DIAS_DA_SEMANA.map((dia) => {
               const marcado = habito.dias_semana.includes(dia.codigo)
 
               return (
                 <span
                   key={dia.codigo}
-                  className={marcado ? 'chip' : `chip ${estilos.diaInativo}`}
+                  className={
+                    marcado
+                      ? 'chip'
+                      : 'chip bg-[var(--color-surface-raised)] text-[var(--color-text-subtle)]'
+                  }
                   title={dia.codigo}
                 >
                   {dia.letra}
