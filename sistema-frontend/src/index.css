@@ -1,13 +1,8 @@
 @import "tailwindcss";
 @import "./App.css";
 
-:root {
-  color-scheme: dark;
-  font-family: Inter, "Avenir Next", Avenir, "Segoe UI", sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@theme static {
 
   --color-bg: #181819;
   --color-bg-deep: #101011;
@@ -28,16 +23,27 @@
   --color-orange: #ff944d;
   --color-success: #72d6a1;
   --color-danger: #ff6f91;
-  --gradient-accent: linear-gradient(90deg, #b8dcea 0%, #9ce8ed 38%, #b590f2 72%, #d79af2 100%);
 
   --radius-sm: 7px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --shadow-card: 6px 7px 0 #0c0c0d;
   --shadow-button: 0 5px 0 #5f369f;
+
+}
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --gradient-accent: linear-gradient(90deg, #b8dcea 0%, #9ce8ed 38%, #b590f2 72%, #d79af2 100%);
   --page-width: 540px;
   --page-padding: clamp(20px, 5vw, 28px);
   --bottom-nav-height: 86px;
+
 }
 
 * {
